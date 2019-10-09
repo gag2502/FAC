@@ -1,0 +1,16 @@
+.data
+
+str: .asciiz "Alo mundo"
+quebra_linha: .asciiz "\n"
+
+.text
+
+main:
+
+	li $v0, 4
+	la $a0, str
+	syscall
+	
+	li $v0, 4
+	la $a0, quebra_linha
+	syscall
